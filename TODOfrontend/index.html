@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container" id="container">
+        <div  class="container_content">
+            <h1>ToDo Lista</h1>
+            <br>
+            <br>
+            <form action="http://127.0.0.1:3000/api/todo" method="post" class="formulario" onsubmit="registrar(event, this)" name="formulario">
+                <input type="text" name="todo_name" placeholder="nombre de la tarea" id="todo_name">
+                <textarea name="todo_description" id="todo_description" cols="30" rows="5" placeholder="descripcion de la tarea"></textarea>
+                <button type="submit" id="botonAgregar">Agregar</button>
+            </form>
+            <br>
+            <div id="cuerpo">
+                
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
